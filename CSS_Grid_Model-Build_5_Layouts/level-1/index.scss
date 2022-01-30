@@ -29,3 +29,10 @@ $bp : (
   place-items: center;
   border: 3px solid red;
 }
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+}
