@@ -179,6 +179,30 @@ img {
 
 /* header */
 
+
+/* collaboration */
+
+.grid-image {
+    margin-top: 2.4rem;
+    grid-column: span $--num-of-grid-columns;
+}
+
+.text-group {
+    margin-top: 2rem;
+    grid-column: span $--num-of-grid-columns;
+}
+
+.secondary-title {
+    font-size: $--secondary-title-font-size;
+}
+
+.text-group p {
+    margin-top: 2rem;
+    line-height: 3.2rem;
+}
+
+/* collaboration */
+
 /*@keyframes wave-animation {*/
 /*    0% {*/
 /*        d: path("M826.337463,25.5396311 C670.970254,58.655965 603.696181,68.7870267 447.802481,35.1443383 C293.342778,1.81111414 137.33377,1.81111414 0,1.81111414 L0,150 L1920,150 L1920,1.81111414 C1739.53523,-16.6853983 1679.86404,73.1607868 1389.7826,37.4859505 C1099.70117,1.81111414 981.704672,-7.57670281 826.337463,25.5396311 Z");*/
