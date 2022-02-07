@@ -177,8 +177,6 @@ img {
     background-color: #36393f;
 }
 
-/* header */
-
 
 /* collaboration */
 
@@ -201,7 +199,6 @@ img {
     line-height: 3.2rem;
 }
 
-/* collaboration */
 
 /* voice-channel */
 
@@ -234,4 +231,27 @@ img {
     transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-/* voice-channel */
+/* video call */
+
+.video-call {
+    background-color: $--off-white-clr;
+}
+
+.video-call .row {
+    padding-bottom: 8rem;
+}
+
+.video-call .text-group {
+    grid-column: span $--num-of-grid-columns;
+    margin-top: 0;
+}
+
+.video-call .text-group p {
+    margin-top: 2.4rem;
+}
+
+.video-call .grid-image {
+    width: 100%;
+    grid-column: span $--num-of-grid-columns;
+    margin-top: 2.4rem;
+}
