@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid - Fonction CSS MinMax()</title>
+  <style>
+    /* les 2 permettent un retour à la ligne */
+    /* auto-fit : les colonnes vont s'ajuster dans la grille, si il y a trop place*/
+    /* auto-fill : des colonnes vont s'ajouter dansla grille si il y a de la place */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, MinMax(150px, 1fr));
+      grid-gap: .625rem;
+    }
+
+    .item {
+      padding: 1rem;
+      background-color: crimson;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  
+  <div class="grid">
+    <div class="item">div1</div>
+    <div class="item">div2</div>
+    <div class="item">div3</div>
+    <div class="item">div4</div>
+    <div class="item">div5</div>
+    <div class="item">div6</div>
+  </div>
+</body>
+</html>
