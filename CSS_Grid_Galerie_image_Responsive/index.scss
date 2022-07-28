@@ -28,9 +28,19 @@ $bp : (
 }
 @include query(mobile) {
 
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
+  }
+
+  .item1 {
+    grid-column: 1 / -1; // ou span 12
+  } 
+
+  .item2, .item3 {
+    grid-column: span 6 ;
+  }
+
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
