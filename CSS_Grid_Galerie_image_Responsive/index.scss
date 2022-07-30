@@ -31,6 +31,49 @@ $bp : (
 }
 
 
+@media screen and (min-width: 1080px) {
+  .grid {
+    max-width: 80%;
+    margin: 0 auto;
+    grid-auto-rows: 10vw;
+  }
+
+  .item1 {
+    grid-column: span 6;
+    grid-row: span 2;
+  }
+
+  .item2, .item3 {
+    grid-row: span 2;
+  }
+  .item2 {
+    grid-column: 7 /10;
+  }
+
+  .item3 {
+    grid-column: 10 /13;
+  }
+
+  .item4, .item5  {
+    grid-column: span 3;
+  }
+
+  .item5  {
+    grid-row: 4 /5;
+  }
+  
+  .item6 {
+    grid-column: 4 / 7;
+  }
+
+  .item7 {
+    grid-column: span 6;
+  }
+
+  .item6, .item7 {
+    grid-row: span 2;
+  }
+}
 
 @media screen and (min-width: 768px) and (max-width: 1080px) {
   .grid {
